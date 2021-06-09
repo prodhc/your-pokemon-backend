@@ -9,7 +9,7 @@ server.use(cors())
 server.use('/api/pokemon', pokemonRouter)
 
 server.use('e', (req, res) => {
-    res.send(`<h1>Hello There</h1>`)
+    res.send(`<h2>Hello There</h2>`)
 })
 
 server.use('*', (req, res, next) => {
