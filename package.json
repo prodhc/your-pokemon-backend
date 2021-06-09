@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "test": "cross-env NODE_ENV=testing jest --watch --verbose --runInBand",
+    "rollback": "knex migrate:rollback",
+    "mgup": "knex migrate:up",
+    "mgdown": "knex migrate:down",
+    "migrate": "knex migrate:latest",
+    "seed": "knex seed:run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prodhc/your-pokemon-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prodhc/your-pokemon-backend/issues"
+  },
+  "homepage": "https://github.com/prodhc/your-pokemon-backend#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.95.6",
+    "sqlite3": "^5.0.2"
+  }
+}
